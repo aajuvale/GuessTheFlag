@@ -10,12 +10,60 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            HStack {
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(Color.red)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+            }
+            HStack {
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(Color.red)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(Color.red)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .shadow(radius: 1.5)
+                    .foregroundStyle(Color.white)
+                        .opacity(0.6)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .shadow(radius: 1.5)
+                    .foregroundStyle(Color.white)
+                        .opacity(0.6)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .shadow(radius: 1.5)
+                    .foregroundStyle(Color.white)
+                        .opacity(0.6)
+            }
+            HStack {
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(Color.red)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(Color.green)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(Color.green)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(Color.green)
+                Rectangle()
+                    .frame(width: 50, height: 50)
+                    .foregroundStyle(Color.green)
+            }
         }
-        .padding()
     }
 }
 
