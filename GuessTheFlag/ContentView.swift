@@ -19,10 +19,12 @@ struct ContentView: View {
             Color.blue.opacity(0.5)
                 .ignoresSafeArea()
             
-            VStack {
+            VStack(spacing: 30) {
                 VStack {
                     Text("Tap the flag of ")
+                        .foregroundColor(.white)
                     Text(countries[correctAnser])
+                        .foregroundColor(.white)
                 }
                 
                 ForEach(0..<3) {number in
