@@ -9,21 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            ZStack {
-                VStack(spacing: 0) {
-                    Color.red
-                    Color.blue
-                }
-                
-                Text("Hello world!")
-                    .foregroundStyle(.secondary)
-                    .padding(50)
-                    .background(.ultraThinMaterial)
-            }
-            .background(.red)
-            .ignoresSafeArea() // goes past the safe area
-        }
+        LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .top, endPoint: .bottom)
     }
 }
 
